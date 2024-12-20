@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+        .artwork-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .artwork-item:hover {
+            transform: translateY(-5px);
+        }
+        .artwork-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .artwork-info {
+            padding: 15px;
+        }
+        .artwork-info h3 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .artwork-info p {
+            margin: 0;
+            color: #666;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <header>
+            <h1>Artwork Gallery</h1>
+            <p>A collection of my digital and traditional artwork</p>
+        </header>
+        
+        <div class="gallery">
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork1.jpg" alt="Digital Illustration">
+                <div class="artwork-info">
+                    <h3>Digital Landscape</h3>
+                    <p>A digital painting exploring natural landscapes and lighting techniques.</p>
+                </div>
+            </div>
+            
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork2.jpg" alt="Traditional Painting">
+                <div class="artwork-info">
+                    <h3>Watercolor Study</h3>
+                    <p>Traditional watercolor painting focusing on color theory and composition.</p>
+                </div>
+            </div>
+            
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork3.jpg" alt="Character Design">
+                <div class="artwork-info">
+                    <h3>Character Concept</h3>
+                    <p>Original character design created using digital illustration techniques.</p>
+                </div>
+            </div>
+            
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork4.jpg" alt="Abstract Art">
+                <div class="artwork-info">
+                    <h3>Abstract Composition</h3>
+                    <p>Mixed media artwork exploring form and texture.</p>
+                </div>
+            </div>
+            
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork5.jpg" alt="Sketch">
+                <div class="artwork-info">
+                    <h3>Figure Study</h3>
+                    <p>Traditional pencil sketch focusing on human anatomy and form.</p>
+                </div>
+            </div>
+            
+            <div class="artwork-item">
+                <img src="/portfolio/images/artwork6.jpg" alt="Digital Art">
+                <div class="artwork-info">
+                    <h3>Digital Portrait</h3>
+                    <p>Digital painting exploring light and shadow in portraiture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
