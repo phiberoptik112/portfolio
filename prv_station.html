@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRV Station Project Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project-section {
+            margin-bottom: 40px;
+        }
+        .timeline-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PRV Station Development Project</h1>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <img src="/portfolio/images/prv_timeline_milestones.png" alt="Project Timeline" class="timeline-image">
+            <p>TMy Responsibilities were to design a fix to the Pressure Relief Vent such that the perceived noise of air exiting the exit did not exceed a specific Quality factor of tonality.
+            I worked with my teammates in acoustics integration and design, as well as Noise and Vibration teammate William, and my rapid prototyping teammate Bonnie. Design changes were needed to be reviewed by Product design counterpart, and implemented by technical operations and our China team.</p>
+            <h2>Issue Troubleshooting Timeline</h2>
+            <img src="/portfolio/images/prv_timeline_phases.png" alt="PRV Project Timeline" class="timeline-image">
+            
+            <h2>Root Cause Analysis</h2>
+            <p>With the CT scanning images, we could begin to see 
+            clear correlation to variation in the port exit geometry. This lead to an intensive investigation of how the pressure relief insert is assembled, and examining tolerances there. We had determined: When Z height changes, tones change. 
+            This was also a critical conclusion, since our design could change to accommodate the tolerance variation, and we could now focus on assembly process and tolerance stack up for root cause sources. </p>
+            <p>Tolerance examination determined that there were a large number of factors with assembly, but we could examine the largest offender and design out the variation. This was also a critical datum for communicating the issue resolution to manufacturing teams. 
+                - Control Variable Selection and data evaluation by the experimenter is a key feedback loop, with each step being the process of variable selection and experimenting with the problem to find root cause.
+                - Discovery of issue characteristics is key. Informed iteration should lead to sentences such as: “When X is changed, Y occurs.” 
+            </p>
+            <p></p>
+            The assembly of the Pressure relief vent insert was accomplished with a fixture that moves with rotation and translation simultaneously to blindly adhere the insert onto two non-coplanar surfaces.
+            There is a large stack up of mesh, adhesive and glue on the exit end of the vent path, and a thin foam and glue applied to the inlet. 
+            Realizing the amount of variation in assembly, then analyzing its contributions to our issue was my key goal. I had to analyze the way product design saw the variance, as well as technical operations, who oversee assembly. 
+            
+            Communicating properly to product design the relationship of the screws, adhesive and gluing processes to failure was critical. The screw variation could be de-risked, since the curing process for both center frame AND the vent insert had completed and stopped shifting tolerances. 
+            </p>
+            <h2>Data Analysis</h2>
+            <p>
+                The bedrock upon which we implemented our design solutions had to be a sound analysis of the relevant data to the root cause. The best way to accomplish this was to have a solid test foundataion, and mutiple test parameters i could measure to characerize the issue. 
+                The initial phase of the project involved extensive data collection and analysis to understand the acoustic characteristics of the pressure relief vent. Using specialized measurement equipment, we gathered frequency response data across multiple prototype units to identify patterns in the acoustic behavior. This data was crucial in establishing baseline measurements and identifying the specific conditions under which the unwanted tone occurred.</p>
+
+            <h2>Solution Validation</h2>
+            <p>To validate our findings, we developed a testing methodology that could reliably reproduce the conditions leading to the unwanted tone. This involved creating a controlled testing environment with precise airflow management and acoustic measurement capabilities. Multiple iterations of the vent design were tested to verify that our proposed solutions effectively addressed the issue while maintaining the necessary pressure relief functionality.</p>
+            
+            <h2>Implementation</h2>
+            <p>The final phase involved translating our laboratory testing methodology into a production-ready testing station. We developed automated testing procedures that could quickly and accurately measure the Q-factor of potential tones, allowing for rapid pass/fail determination in a production environment. The implementation included:</p>
+            <ul>
+                <li>Custom hardware setup for consistent airflow application</li>
+                <li>Automated acoustic measurement system</li>
+                <li>Real-time frequency analysis software</li>
+                <li>Clear pass/fail criteria based on Q-factor measurements</li>
+                <li>Integration with existing production line systems</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
