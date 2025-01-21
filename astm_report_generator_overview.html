@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASTM Report Generator Code Review</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .code-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .future-dev {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .github-link {
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #24292e;
+            color: white;
+            border-radius: 5px;
+        }
+        .github-link a {
+            color: white;
+            text-decoration: none;
+        }
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ASTM Report Generator Codebase Review</h1>
+
+        <div class="code-section">
+            <h2>GUI Component</h2>
+            <p>The graphical user interface is built using PyQt5 and consists of:</p>
+            <ul>
+                <li>File selection widgets for test data and test plan inputs</li>
+                <li>Raw SLM data path input</li>
+
+            </ul>
+
+            <p>Key features include input validation and real-time feedback to ensure data completeness before processing.</p>
+        </div>
+
+        <div class="code-section">
+            <h2>Data Processor</h2>
+            <p>The data processing backend utilizes pandas and numpy for efficient calculations:</p>
+            <ul>
+                <li>Sound level meter data parsing and validation</li>
+                <li>Frequency band analysis and calculations per ASTM standards</li>
+                <li>Statistical analysis for measurement uncertainty</li>
+                <li>Data normalization and correction factors application</li>
+                <li>Results aggregation and verification</li>
+            </ul>
+            <p>The processor implements vectorized operations for optimal performance when handling large datasets.</p>
+        </div>
+
+        <div class="code-section">
+            <h2>Report Builder</h2>
+            <p>Report generation is handled through a combination of ReportLab and custom templating:</p>
+            <ul>
+                <li>PDF generation with consistent formatting</li>
+                <li>Dynamic chart and graph creation using matplotlib</li>
+                <li>Table generation for measurement data</li>
+                <li>Automated placement of results and analysis</li>
+                <li>Custom header/footer implementation</li>
+            </ul>
+            <p>The builder supports multiple report formats and maintains compliance with ASTM documentation requirements.</p>
+        </div>
+
+        <div class="future-dev">
+            <h2>Future Development Ideas</h2>
+            <ul>
+                <li>Implementation of single test processing</li>
+                <li>Enhanced data visualization options with interactive plots</li>
+                <li>Cloud storage integration for report archiving</li>
+                <li>Additional test standard support (ISO, EN)</li>
+                <li>Automated test plan generation tool</li>
+                <li>Integration with measurement equipment for direct data import</li>
+                <li>Custom report template designer, Configuration options for report generation</li>
+                <li>Historical data analysis and trending features</li>
+            </ul>
+        </div>
+
+        <div class="github-link">
+            <h2>GitHub Repository</h2>
+            <p>View the complete source code and contribute to development:</p>
+            <a href="https://github.com/phiberoptik112/ASTM-Report-Generator" target="_blank">
+                ASTM Report Generator Repository
+            </a>
+        </div>
+    </div>
+</body>
+</html>
