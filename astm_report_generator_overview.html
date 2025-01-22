@@ -66,12 +66,13 @@
             <h2>GUI Component</h2>
             <p>The graphical user interface is built using PyQt5 and consists of:</p>
             <ul>
-                <li>File selection widgets for test data and test plan inputs</li>
+                <li>Test Plan input file - needs to be properly formatted for current MLP version</li>
                 <li>Raw SLM data path input</li>
-
+                <li>Load data - Uses the FileLoader class to load the data from the GUI into a test_data_collection dictionary </li>
+                <li>Output all reports - Uses the DataProcessor class to process the data from the test_data_collection dictionary into all the aspects of the Reportlab functions.</li>
             </ul>
 
-            <p>Key features include input validation and real-time feedback to ensure data completeness before processing.</p>
+            <p>This beigns with a FileLoader class that loads the input data from the GUI, does a bit of cleanup, and then passes the data to the DataProcessor class.</p>
         </div>
 
         <div class="code-section">
@@ -79,38 +80,34 @@
             <p>The data processing backend utilizes pandas and numpy for efficient calculations:</p>
             <ul>
                 <li>Sound level meter data parsing and validation</li>
-                <li>Frequency band analysis and calculations per ASTM standards</li>
-                <li>Statistical analysis for measurement uncertainty</li>
+                <li>Apparent Tansmission Loss, Noise Reduction calculations per ASTM standards</li>
                 <li>Data normalization and correction factors application</li>
-                <li>Results aggregation and verification</li>
+                <li>ASTC, AIIC, NIC, DTC Curve generation and plotting elements for the report</li>
             </ul>
             <p>The processor implements vectorized operations for optimal performance when handling large datasets.</p>
         </div>
 
         <div class="code-section">
             <h2>Report Builder</h2>
-            <p>Report generation is handled through a combination of ReportLab and custom templating:</p>
+            <p>Report generation is handled through ReportLab formatting and matplotlib for the charts and graphs:</p>
             <ul>
                 <li>PDF generation with consistent formatting</li>
-                <li>Dynamic chart and graph creation using matplotlib</li>
+                <li>Table and graph creation using matplotlib</li>
                 <li>Table generation for measurement data</li>
                 <li>Automated placement of results and analysis</li>
                 <li>Custom header/footer implementation</li>
             </ul>
-            <p>The builder supports multiple report formats and maintains compliance with ASTM documentation requirements.</p>
+            <p>The report builder maintains compliance with ASTM documentation requirements, and displays any errors or warnings given the final calculations and results.</p>
         </div>
 
         <div class="future-dev">
             <h2>Future Development Ideas</h2>
             <ul>
-                <li>Implementation of single test processing</li>
-                <li>Enhanced data visualization options with interactive plots</li>
-                <li>Cloud storage integration for report archiving</li>
-                <li>Additional test standard support (ISO, EN)</li>
-                <li>Automated test plan generation tool</li>
-                <li>Integration with measurement equipment for direct data import</li>
+                <li>Working toward adding an step before report/pdf generation to ensure data plotting is correct</li>
+                <li>Test plan GUI to utilize in the field</li>
+                <li>Integration with measurement equipment for direct data import, or a 'rough' calculation tool from phone input data</li>
                 <li>Custom report template designer, Configuration options for report generation</li>
-                <li>Historical data analysis and trending features</li>
+                <li>Implementation of single test processing and report generation</li>
             </ul>
         </div>
 
