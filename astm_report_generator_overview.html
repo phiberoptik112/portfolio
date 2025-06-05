@@ -68,20 +68,20 @@
         <h1 style="color: white;">ASTM Test Calculator Codebase Review</h1>
         <div class="github-link">
             <h2>GitHub Repository</h2>
-            <p> "This is the repository for the ASTM Test Calculator: 
+            <p> Github repository for the ASTM Test Calculator can be found here: 
             </p>
             <a href="https://github.com/phiberoptik112/ASTM_test_calculator" target="_blank">
-                <u>ASTM Test Calculator Repository</u>
+                <u style="color: #00ff00;">ASTM Test Calculator Repository</u>
             </a>
         </div>
         <div class="code-section">
             <h2>GUI Component</h2>
             <p>The graphical user interface is built using Kivy and consists of:</p>
             <ul>
-                <li>Test Plan input file - needs to be properly formatted for current MLP version</li>
-                <li>Raw SLM data path input</li>
+                <li>Test Plan input file - needs to be properly formatted for current Most Lovable Prototype version</li>
+                <li>Raw SLM data path input - with the current example data, this is the output from a Larson Davis sound level meter, but it can be any octave band frequency data that is properly formatted. </li>
                 <li>Load data - Uses the FileLoader class to load the data from the GUI into a test_data_collection dictionary </li>
-                <li>Output reports - Uses the DataProcessor class to process the data from the test_data_collection dictionary into CSVs, saved to the user's specified location. 
+                <li>Output reports - Uses the DataProcessor class to process the data from the test_data_collection dictionary into CSVs, saved to the user's specified location. </li>
             </ul>
 
             <p>This beigns with a FileLoader class that loads the input data from the GUI, does a bit of cleanup, and then passes the data to the DataProcessor class.</p>
@@ -103,11 +103,9 @@
             <h2>Report Builder</h2>
             <p>Report generation is handled through ReportLab formatting and matplotlib for the charts and graphs:</p>
             <ul>
-                <li>PDF generation with consistent formatting</li>
+                <li>PDF generation with consistent formatting - Proprietary feature, not available in the ASTM calculator.</li>
                 <li>Table and graph creation using matplotlib</li>
                 <li>Table generation for measurement data</li>
-                <li>Automated placement of results and analysis</li>
-                <li>Custom header/footer implementation</li>
             </ul>
             <p>The report builder maintains compliance with ASTM documentation requirements, and displays any errors or warnings given the final calculations and results.
             </p>
@@ -135,10 +133,10 @@
 
         <div class="github-link">
             <h2>GitHub Repository</h2>
-            <p> "This is the repository for the ASTM Report Generator: 
+            <p> This is the repository for the ASTM Test Calculator: 
             </p>
             <a href="https://github.com/phiberoptik112/ASTM_test_calculator" target="_blank">
-                ASTM Test Calculator Repository
+                <u style="color: #00ff00;"></u>ASTM Test Calculator Repository</u>
             </a>
         </div>
     </div>
