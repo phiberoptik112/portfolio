@@ -71,7 +71,7 @@
             <p> "This is the repository for the ASTM Test Calculator: 
             </p>
             <a href="https://github.com/phiberoptik112/ASTM_test_calculator" target="_blank">
-                ASTM Test Calculator Repository
+                <u>ASTM Test Calculator Repository</u>
             </a>
         </div>
         <div class="code-section">
@@ -81,7 +81,7 @@
                 <li>Test Plan input file - needs to be properly formatted for current MLP version</li>
                 <li>Raw SLM data path input</li>
                 <li>Load data - Uses the FileLoader class to load the data from the GUI into a test_data_collection dictionary </li>
-                <li>Output all reports - Uses the DataProcessor class to process the data from the test_data_collection dictionary into all the aspects of the Reportlab functions.</li>
+                <li>Output reports - Uses the DataProcessor class to process the data from the test_data_collection dictionary into CSVs, saved to the user's specified location. 
             </ul>
 
             <p>This beigns with a FileLoader class that loads the input data from the GUI, does a bit of cleanup, and then passes the data to the DataProcessor class.</p>
@@ -109,12 +109,14 @@
                 <li>Automated placement of results and analysis</li>
                 <li>Custom header/footer implementation</li>
             </ul>
-            <p>The report builder maintains compliance with ASTM documentation requirements, and displays any errors or warnings given the final calculations and results.</p>
+            <p>The report builder maintains compliance with ASTM documentation requirements, and displays any errors or warnings given the final calculations and results.
+            </p>
+            <p>This PDF generation feature is a proprietary feature of the ASTM Test Calculator, and is not available in the ASTM calculator.
+            </p>
         </div>
         <div class="code-section">
             <h2>In-Development</h2>
             <p>A new input GUI is being developed to view the plotted raw data and the calculated results, prior to the report generation:</p>
-            <img src="/portfolio/images/new_input_gui.png" alt="New Test Plan Input GUI" style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px;" />
             <img src="/portfolio/images/plot_selection_gui.png" alt="Plot Selection GUI" style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px;" />
             <img src="/portfolio/images/data_plot_results_gui.png" alt="Data Plot and Results GUI" style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px;" />
             <p>The following is a list of features that are currently being developed or are planned for future development.</p>
@@ -123,11 +125,11 @@
         <div class="future-dev">
             <h2>Future Development Ideas</h2>
             <ul>
-                <li>Working toward adding an step before report/pdf generation to ensure data plotting is correct</li>
-                <li>Test plan GUI to utilize in the field</li>
+                <li>Working toward adding an step before report/pdf generation to ensure data plotting is correct -- Done! </li>
+                <li>Test plan GUI to utilize in the field - Done! properly utilized for field work in early May of '25. </li>
                 <li>Integration with measurement equipment for direct data import, or a 'rough' calculation tool from phone input data</li>
                 <li>Custom report template designer, Configuration options for report generation</li>
-                <li>Implementation of single test processing and report generation</li>
+                <li>Implementation of single test processing and report generation - Implemented with the latest calculator version.</li>
             </ul>
         </div>
 
