@@ -93,18 +93,18 @@
 
         <div class="code-section">
             <h2>Data Processor</h2>
-            <p>The data processing backend utilizes pandas and numpy for efficient calculations:</p>
+            <p>The data processing backend utilizes pandas and numpy:</p>
             <ul>
                 <li>Sound level meter data parsing and validation</li>
                 <li>Apparent Tansmission Loss, Noise Reduction calculations per ASTM standards</li>
                 <li>Data normalization and correction factors application</li>
-                <li>ASTC, AIIC, NIC, DTC Curve generation and plotting elements for the report</li>
+                <li>ASTC, AIIC, and NIC Curve generation and plotting elements for the report</li>
             </ul>
             <p>This section has become an area to place verification and validation methods to trace if there has been issues with loading the proper files and their data.</p>
         </div>
 
         <div class="code-section">
-            <h2>Report Builder</h2>
+            <h2>Report Builder - Proprietary Feature</h2>
             <p>Report generation is handled through ReportLab formatting and matplotlib for the charts and graphs:</p>
             <ul>
                 <li>PDF generation with consistent formatting - Proprietary feature, not available in the ASTM calculator.</li>
@@ -118,20 +118,23 @@
         </div>
         <div class="code-section">
             <h2>In-Development</h2>
-            <p>A new input GUI is being developed to view the plotted raw data and the calculated results, prior to the report generation:</p>
-            <img src="/portfolio/images/plot_selection_gui.png" alt="Plot Selection GUI" style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px;" />
-            <img src="/portfolio/images/data_plot_results_gui.png" alt="Data Plot and Results GUI" style="max-width: 100%; margin: 20px 0; border: 1px solid #ddd; border-radius: 5px;" />
+            <p>Currently in the works: </p>
+            <ul>
+                <li>Refactoring the main ui code file to tease out input data cleaning functions that can be independently tested and used in the future.</li>
+                <li>Adding in a setup step to remove the need for a csv input file for a test plan </li>
+                <li>Improving GUI messaging to inform the user how to proceeed through the program </li>
+                <li>Adding in a loading bar and robust troubleshooting of raw input data and test plan information</li>
+
+            </ul>
             <p>The following is a list of features that are currently being developed or are planned for future development.</p>
         </div>
 
         <div class="future-dev">
             <h2>Future Development Ideas</h2>
             <ul>
-                <li>Working toward adding an step before report/pdf generation to ensure data plotting is correct -- Done! </li>
-                <li>Test plan GUI to utilize in the field - Done! properly utilized for field work in early May of '25. </li>
-                <li>Integration with measurement equipment for direct data import, or a 'rough' calculation tool from phone input data</li>
                 <li>Custom report template designer, Configuration options for report generation</li>
-                <li>Implementation of single test processing and report generation - Implemented with the latest calculator version.</li>
+                <li>Integration with measurement equipment for direct data import, or a 'rough' calculation tool from phone input data</li>
+
             </ul>
         </div>
 
